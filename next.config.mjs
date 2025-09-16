@@ -18,23 +18,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // اضافه کردن این بخش برای نادیده گرفتن خطاهای مربوط به ماژول‌های گمشده
-  webpack: (config) => {
-    config.resolve.fallback = {
-      ...config.resolve.fallback,
-      fs: false,
-    };
-    
-    // نادیده گرفتن خطاهای CSS گمشده
-    config.plugins.push(
-      new (require('webpack').IgnorePlugin)({
-        resourceRegExp: /\.css$/,
-        contextRegExp: /(checkout|order-COMIFORMATION)/,
-      })
-    );
-    
-    return config;
-  },
+  // حذف بخش webpack که باعث خطا شده
 };
 
 export default nextConfig;
