@@ -1,0 +1,372 @@
+/* OrderConfirmation.css */
+.confirmation-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    min-height: 80vh;
+  }
+  
+  .confirmation-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    border-radius: 16px;
+    color: white;
+  }
+  
+  .success-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .confirmation-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .order-number {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 1rem;
+  }
+  
+  .confirmation-message {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .confirmation-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .order-summary {
+    grid-column: 1 / -1;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    padding: 2rem;
+  }
+  
+  .order-summary h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+  }
+  
+  .order-items {
+    margin-bottom: 2rem;
+  }
+  
+  .order-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f3f4f6;
+  }
+  
+  .order-item:last-child {
+    border-bottom: none;
+  }
+  
+  .item-image {
+    width: 60px;
+    height: 60px;
+    background: #f8fafc;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .item-details {
+    flex: 1;
+  }
+  
+  .item-details h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0 0 0.25rem 0;
+  }
+  
+  .item-details p {
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin: 0 0 0.25rem 0;
+  }
+  
+  .quantity {
+    color: #6b7280;
+    font-size: 0.8rem;
+  }
+  
+  .item-price {
+    font-weight: 600;
+    color: #374151;
+  }
+  
+  .order-totals {
+    border-top: 2px solid #e5e7eb;
+    padding-top: 1rem;
+  }
+  
+  .total-row {
+    display: flex;
+    justify-content: between;
+    align-items: center;
+    padding: 0.5rem 0;
+    color: #6b7280;
+  }
+  
+  .total-row.final-total {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1f2937;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 0.5rem;
+    padding-top: 1rem;
+  }
+  
+  .shipping-info,
+  .payment-info,
+  .next-actions {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    padding: 1.5rem;
+  }
+  
+  .shipping-info h2,
+  .payment-info h2,
+  .next-actions h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .info-card {
+    background: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .info-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+  }
+  
+  .info-card p {
+    color: #6b7280;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .delivery-estimate,
+  .payment-status {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .delivery-date {
+    font-weight: 600;
+    color: #10b981 !important;
+    font-size: 1.1rem;
+  }
+  
+  .shipping-method {
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  
+  .status-badge.confirmed {
+    background: #ecfdf5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+  }
+  
+  .action-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .action-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .step-number {
+    width: 32px;
+    height: 32px;
+    background: #3b82f6;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  
+  .step-content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0 0 0.25rem 0;
+  }
+  
+  .step-content p {
+    color: #6b7280;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+  }
+  
+  .continue-shopping-btn,
+  .track-order-btn,
+  .download-invoice-btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .continue-shopping-btn {
+    background: #3b82f6;
+    color: white;
+  }
+  
+  .continue-shopping-btn:hover {
+    background: #2563eb;
+  }
+  
+  .track-order-btn {
+    background: white;
+    color: #374151;
+    border: 1px solid #d1d5db;
+  }
+  
+  .track-order-btn:hover {
+    background: #f9fafb;
+    border-color: #9ca3af;
+  }
+  
+  .download-invoice-btn {
+    background: #10b981;
+    color: white;
+  }
+  
+  .download-invoice-btn:hover {
+    background: #059669;
+  }
+  
+  .support-section {
+    text-align: center;
+    padding: 2rem;
+    background: #f9fafb;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .support-section h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+  }
+  
+  .support-section p {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+  
+  .support-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .support-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #374151;
+    font-weight: 500;
+  }
+  
+  .support-icon {
+    font-size: 1.2rem;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.2rem;
+    color: #6b7280;
+  }
+  
+  /* رسپانسیو برای موبایل */
+  @media (max-width: 768px) {
+    .confirmation-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .confirmation-header {
+      padding: 1.5rem;
+    }
+    
+    .confirmation-header h1 {
+      font-size: 2rem;
+    }
+    
+    .action-buttons {
+      flex-direction: column;
+    }
+    
+    .continue-shopping-btn,
+    .track-order-btn,
+    .download-invoice-btn {
+      width: 100%;
+    }
+    
+    .support-options {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }

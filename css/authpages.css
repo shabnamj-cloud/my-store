@@ -1,0 +1,158 @@
+/* صفحه کلی */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f9fafb; /* خاکستری خیلی روشن */
+  font-family: sans-serif;
+}
+
+/* کارت فرم */
+.auth-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+/* گروه ورودی‌ها */
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+  color: #374151;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s ease-in-out;
+}
+
+.form-group input:focus {
+  border-color: #2563eb; /* آبی */
+}
+
+/* دکمه‌ها */
+.btn-submit {
+  width: 100%;
+  padding: 0.7rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-submit:hover {
+  background: #1d4ed8;
+}
+
+.btn-google {
+  width: 100%;
+  padding: 0.6rem;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background 0.2s;
+}
+
+.btn-google:hover {
+  background: #f3f4f6;
+}
+
+/* متن پیام‌ها */
+.form-message {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #059669; /* سبز */
+}
+
+/* جداکننده */
+.divider {
+  margin: 1.5rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #e5e7eb;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+/* لینک‌ها */
+.switch-form {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.switch-form .link {
+  color: #2563eb;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.switch-form .link:hover {
+  text-decoration: underline;
+}
+
+/* لینک فراموشی رمز عبور */
+.forgot-link {
+  margin-top: 0.8rem;
+  text-align: right;
+}
+
+.forgot-link .link {
+  color: #e11d48;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.forgot-link .link:hover {
+  text-decoration: underline;
+}

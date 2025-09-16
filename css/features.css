@@ -1,0 +1,77 @@
+.features-section {
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #f0f3ff, #d9e2ff); /* gradient ملایم */
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.85); /* کمی شفاف برای حس مدرن */
+  backdrop-filter: blur(10px); /* blur ملایم */
+  border-radius: 25px;
+  padding: 2rem;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #6e7dff, #a1b6ff);
+  color: white;
+}
+
+.feature-icon {
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* انیمیشن ورود */
+.feature-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s forwards;
+}
+
+.feature-card:nth-child(1) { animation-delay: 0.2s; }
+.feature-card:nth-child(2) { animation-delay: 0.4s; }
+.feature-card:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* واکنش‌گرایی */
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 85%;
+  }
+}

@@ -1,0 +1,78 @@
+/* ProductsPage.css */
+
+.products-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  min-height: 80vh;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.page-header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.page-header p {
+  font-size: 1.1rem;
+  color: #6b7280;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+  color: #ef4444;
+  background: #fef2f2;
+  border-radius: 12px;
+  margin: 2rem 0;
+  border: 1px solid #fecaca;
+}
+
+.no-products {
+  text-align: center;
+  padding: 3rem;
+  background: #f9fafb;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+.no-products h3 {
+  font-size: 1.5rem;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.no-products p {
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+/* رسپانسیو برای موبایل */
+@media (max-width: 768px) {
+  .products-page {
+    padding: 1rem 0.5rem;
+  }
+  
+  .page-header h1 {
+    font-size: 2rem;
+  }
+
+  .error, .no-products {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+}

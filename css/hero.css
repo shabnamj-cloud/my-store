@@ -1,0 +1,175 @@
+.hero-overlap {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(135deg, #147df5 70%, #bf67fabd 30%);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.45); /* overlay تیره‌تر برای خوانایی متن */
+}
+
+.hero-main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+  z-index: 1;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #f5f5f5; /* رنگ متن روشن‌تر */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-text h1 span {
+  color: #6e7dff;
+}
+
+.hero-text p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* سایه برای خوانایی بهتر */
+}
+
+.btn-primary {
+  background-color: #6e7dff;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #4b5dff;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #6e7dff;
+  border: 2px solid #6e7dff;
+}
+
+.btn-secondary:hover {
+  background-color: #6e7dff;
+  color: white;
+}
+
+.hero-images-stack {
+  position: relative;
+  width: 650px;
+  height: 450px;
+}
+
+.stack-img {
+  position: absolute;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.stack-img-1 {
+  top: -30px;
+  left: 50px;
+  transform: rotate(-5deg);
+  animation: float 6s ease-in-out infinite;
+}
+
+.stack-img-2 {
+  top: 10px;
+  left:-60px;
+  transform: rotate(5deg);
+  animation: float 5s ease-in-out infinite;
+}
+
+.stack-img-3 {
+  top: 60px;
+  left: 70px;
+  transform: rotate(-3deg);
+  animation: float 7s ease-in-out infinite;
+}
+
+.stack-img:hover {
+  transform: scale(1.08) rotate(0deg);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.hero-bottom-section {
+  position: absolute;
+  bottom: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.playwrite-ca {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6e7dff;
+}
+
+/* واکنش‌گرایی */
+@media (max-width: 768px) {
+  .hero-main-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .hero-images-stack {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 2rem;
+  }
+
+  .stack-img-1 {
+    top: 50;
+    left: 20px;
+  }
+
+  .stack-img-2 {
+    top: 20px;
+    left: 70;
+  }
+
+  .stack-img-3 {
+    top: 40px;
+    left: 70px;
+  }
+}
