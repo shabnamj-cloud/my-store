@@ -2,7 +2,7 @@
 import { useState, useContext } from "react";
 import { useRouter } from "next/navigation";
 import { UserContext } from "../context/UserContext"; // حتما ایمپورت کن
-import "../../css/authPages.css";
+import "../../css/authpages.css";
 
 const AuthPage = () => {
   const [isLogin, setIsLogin] = useState(true);

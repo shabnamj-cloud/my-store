@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useCart } from "../context/CartContext";
 import { FaTrash, FaPlus, FaMinus, FaShoppingCart } from "react-icons/fa";
-import "../../css/checkout.css";
+
 
 export default function CartPage() {
   const { products, removeFromCart, updateQuantity, getCartTotal, clearCart } = useCart();
