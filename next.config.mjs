@@ -1,3 +1,5 @@
+import { IgnorePlugin } from 'webpack';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -32,15 +34,15 @@ const nextConfig = {
     
     // نادیده گرفتن ماژول‌های خاص که پیدا نمی‌شوند
     config.plugins.push(
-      new (require('webpack').IgnorePlugin)({
+      new IgnorePlugin({
         resourceRegExp: /^\.\.\/\.\.\/models\//,
         contextRegExp: /app\/api\//,
       }),
-      new (require('webpack').IgnorePlugin)({
+      new IgnorePlugin({
         resourceRegExp: /^\/models\//,
         contextRegExp: /app\/api\//,
       }),
-      new (require('webpack').IgnorePlugin)({
+      new IgnorePlugin({
         resourceRegExp: /^stripe$/,
       })
     );
